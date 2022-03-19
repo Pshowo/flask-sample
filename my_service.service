@@ -1,0 +1,12 @@
+[Unit]
+Description=Run python app
+After=network.target
+
+[Service]
+User=admin
+WorkingDirectory=/home/admin/cloudx_app
+Environment="PATH=/home/admin/cloudx_app/bin"
+ExecStart=/home/admin/cloudx_app/env/bin/gunicorn app:app -b :5000
+
+[Install]
+WantedBy=multi-user.target
