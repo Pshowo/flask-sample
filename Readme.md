@@ -34,3 +34,8 @@ Insert archive file with code (zip) into s3 bucket.
 	cp /home/admin/cloudx_app/my_service.service /etc/systemd/system/
 	systemctl start my_app.service
 	systemctl enable my_app.service
+	
+
+## Check after init
+
+Logs: `/var/log/cloud-init-output.log`
